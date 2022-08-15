@@ -15,9 +15,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @Description: TODO
  *
- * @author Macky liuyunsh@cn.ibm.com
- *
- * @Copyright: 2022-2099 IBM All rights reserved.
+ * @author longrm
  *
  * @date 2022-08-15 02:51:18 
  */
