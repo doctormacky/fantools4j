@@ -133,7 +133,8 @@ public class SnowflakeIdWorker {
         if (sequenceBits == 0) {
             sequenceBits = timeUnit == TimeUnit.MILLISECONDS ? 12L : 22L;
         }
-        if (workerIdBits <= 0 || datacenterIdBits <= 0 || sequenceBits <= 0) {
+        // >0判断：datacenter可为0
+        if (workerIdBits <= 0 || datacenterIdBits < 0 || sequenceBits <= 0) {
             throw new IllegalArgumentException("worker Id Bits | datacenter Id Bits | sequence Bits can't be less than 0");
         }
         // 最大位数：毫秒22位（+时间41位）| 秒32位（+时间31位）
