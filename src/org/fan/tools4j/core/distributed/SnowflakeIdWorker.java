@@ -9,6 +9,7 @@ import java.util.concurrent.locks.LockSupport;
 
 /**
  * ID生成器：雪花算法
+ * @see <a href="https://github.com/twitter-archive/snowflake/tags">twitter-snowflake</a>
  */
 public class SnowflakeIdWorker {
 
